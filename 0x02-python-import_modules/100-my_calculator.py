@@ -3,7 +3,7 @@ if __name__ == "__main__":
     a = int a
     b = int b
     if argv != 3:
-        print('Usage: ./100-my_calculator.py <a> <operator> <b>')
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     elif operator != '+' or '-' or '*' or '/':
         print('Unknown operator. Available operators: +, -, * and /')
