@@ -11,5 +11,5 @@ def safe_print_integer_err(value):
         # 0 - exception being handled type
         # 1 - args passed to exception class constructor
         # 2 - stack info, traceback
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr))
+        print("Exception: {}".format(sys.exc_info()[1], file=sys.stderr))
         return False
