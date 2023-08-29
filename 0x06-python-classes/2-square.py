@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" define class, Square """
+
+
 class Square:
     """ shared between all of the class instances
     Attributes:
