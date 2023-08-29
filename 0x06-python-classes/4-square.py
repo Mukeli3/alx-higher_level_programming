@@ -25,7 +25,7 @@ class Square:
         Returns:
         int: object size
         """
-        return (self.__size)
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -37,9 +37,9 @@ class Square:
         TypeError: if the value provided is not  an integer type
         ValueError: if the value provided is < 0 """
 
-        if type(size) is not int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = size
+            self.__size = value
