@@ -17,16 +17,20 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
+
     @property
     def width(self):
+
         """ method that gets object(rectangle) width
         returns object width(int)
         """
         return self.__width
+
     @width.setter
     def width(self, value):
+
         """ method acts as a setter, changes attributes values
-        arg: value(int), new width value to be set 
+        arg: value(int), new width value to be set
         raises TypeError and ValueError when value is not an integer
         and value is less than 0 respectively
         """
@@ -36,14 +40,18 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
     @property
     def height(self):
+
         """ method that gets object(rectangle) height
         returns object height(int)
         """
         return self.__height
+
     @height.setter
     def height(self, value):
+
         """ method acts as a setter, changes attributes values
         arg: value(int), new width value to be set
         raises TypeError and ValueError when value is not an integer
