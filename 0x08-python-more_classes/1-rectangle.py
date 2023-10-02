@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' a class defining a rectangle '''
+""" a class defining a rectangle """
 
 
 class Rectangle:
@@ -15,8 +15,8 @@ class Rectangle:
         Two args: width(init) and height(init), the rectangle width
         and height respectively
         """
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
