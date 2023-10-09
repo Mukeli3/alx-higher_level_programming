@@ -4,7 +4,7 @@ add new_attribute function definition
 """
 
 
-def add new_attribute(obj, attr, value):
+def add_attribute(obj, attr, value):
     """
     function adds new attribute to an object
     hasattr - has attribute
