@@ -3,6 +3,7 @@
 Rectangle subclass, BaseGeometry grandchild
 """
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -26,7 +27,6 @@ class Rectangle(BaseGeometry):
         return (text)
 
 
-
 class Square(Rectangle):
     """ Square class definition """
 
@@ -44,4 +44,3 @@ class Square(Rectangle):
         text = '[' + str(self.__class__.__name__) + '] '
         text += str(self.__size) + '/' + str(self.__size)
         return (text)
-
