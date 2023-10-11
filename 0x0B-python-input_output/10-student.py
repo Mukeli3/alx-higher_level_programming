@@ -12,12 +12,12 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """ 
+        """
         method retrieve dictionary representation of an instance
         attrs - strings list
         """
-        if type(attrs) == list and all(type(ele) == str
-                for ele in attrs):
+        if (type(attrs) is list and
+                all(type(ele) is str for ele in attrs)):
             return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
         else:
             return self.__dict__
