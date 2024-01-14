@@ -19,8 +19,11 @@ if __name__ == '__main__':
             )
 
     db_cursor = db_connection.cursor()
+
     db_cursor.execute('SELECT * FROM states ORDER BY states.id ASC')
+
     selected_rows = db_cursor.fetchall()
+
     for rw in selected_rows:
         print(rw)
 
